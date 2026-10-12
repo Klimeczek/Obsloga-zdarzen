@@ -14,7 +14,7 @@
         android:layout_height="80dp"
         android:background="#CEBEBE"
         android:gravity="bottom|right"
-        android:text="@string/tvResult"
+        android:text=""
         android:textSize="32sp" />
 
     <LinearLayout

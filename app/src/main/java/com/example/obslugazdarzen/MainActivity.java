@@ -33,26 +33,17 @@ public class MainActivity extends AppCompatActivity {
         bt2 = findViewById(R.id.bt2);
 
 
-        bt1.setOnClickListener(v -> append1());
-        bt2.setOnClickListener(v -> append2());
-        bt0.setOnClickListener(v -> append0());
+        bt1.setOnClickListener(v -> appendSymbol("1"));
+        bt2.setOnClickListener(v -> appendSymbol("2"));
+        bt0.setOnClickListener(v -> appendSymbol("0"));
 
         tvResult = findViewById(R.id.tvResult);
     }
 
 
-    private void append1() {
-        tvResult.setText(tvResult.getText().toString() + "1");
+    private void appendSymbol(String symbol) {
+        tvResult.setText(tvResult.getText().toString() + symbol);
     }
-
-    private void append2() {
-        tvResult.setText(tvResult.getText().toString() + "2");
-    }
-
-    private void append0() {
-        tvResult.setText(tvResult.getText().toString() + "0");
-    }
-
 
 
 }
