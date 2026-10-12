@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">ObslugaZdarzen</string>
+    <string name="app_name">Calculator</string>
+    <string name="tvResult">Wynik</string>
 </resources>

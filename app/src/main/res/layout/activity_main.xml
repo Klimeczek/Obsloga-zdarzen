@@ -9,6 +9,7 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/tvResult"
         android:layout_width="match_parent"
         android:layout_height="80dp"
         android:background="#CEBEBE"
@@ -37,14 +38,14 @@
             android:layout_weight="1"/>
 
         <Button
-            android:id="@+id/btMultiply"
+            android:id="@+id/btMul"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:text="x"
             android:layout_weight="1"/>
 
         <Button
-            android:id="@+id/btDivide"
+            android:id="@+id/btDiv"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:text=":"
@@ -59,18 +60,21 @@
         android:orientation="horizontal">
 
         <Button
+            android:id="@+id/bt7"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:text="7"
             android:layout_weight="1"/>
 
         <Button
+            android:id="@+id/bt8"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:text="8"
             android:layout_weight="1"/>
 
         <Button
+            android:id="@+id/bt9"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:text="9"
@@ -85,18 +89,21 @@
         android:orientation="horizontal">
 
         <Button
+            android:id="@+id/bt4"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:text="4"
             android:layout_weight="1"/>
 
         <Button
+            android:id="@+id/bt5"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:text="5"
             android:layout_weight="1"/>
 
         <Button
+            android:id="@+id/bt6"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:text="6"
@@ -111,18 +118,21 @@
         android:orientation="horizontal">
 
         <Button
+            android:id="@+id/bt1"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:text="1"
             android:layout_weight="1"/>
 
         <Button
+            android:id="@+id/bt2"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:text="2"
             android:layout_weight="1"/>
 
         <Button
+            android:id="@+id/bt3"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:text="3"
@@ -137,18 +147,21 @@
         android:orientation="horizontal">
 
         <Button
+            android:id="@+id/bt0"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:text="0"
             android:layout_weight="1"/>
 
         <Button
+            android:id="@+id/btComma"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:text=","
             android:layout_weight="1"/>
 
         <Button
+            android:id="@+id/btEq"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:text="="
@@ -157,6 +170,7 @@
     </LinearLayout>
 
     <Button
+        android:id="@+id/btClear"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="C"/>
