@@ -13,7 +13,7 @@ import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Button bt1, bt2, bt3, bt4, bt5, bt6, bt7, bt8, bt9, bt0;
+    private Button bt1, bt2, bt3, bt4, bt5, bt6, bt7, bt8, bt9, bt0, btComma;
     private TextView tvResult;
 
 
@@ -26,6 +26,7 @@ public class MainActivity extends AppCompatActivity {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
+
         });
 
         bt0 = findViewById(R.id.bt0);
@@ -38,12 +39,27 @@ public class MainActivity extends AppCompatActivity {
         bt0.setOnClickListener(v -> appendSymbol("0"));
 
         tvResult = findViewById(R.id.tvResult);
-    }
 
+        View.OnClickListener symbolListener =
+                v -> appendSymbol(((Button) v).getText().toString());
+
+        int[] symbolIds = {
+                R.id.bt0, R.id.bt1, R.id.bt2, R.id.bt3, R.id.bt4,
+                R.id.bt5, R.id.bt6, R.id.bt7, R.id.bt8, R.id.bt9,
+                R.id.btComma
+        };
+
+        for (int id : symbolIds) {
+            findViewById(id).setOnClickListener(symbolListener);
+        }
+
+    }
 
     private void appendSymbol(String symbol) {
         tvResult.setText(tvResult.getText().toString() + symbol);
     }
+
+
 
 
 }
