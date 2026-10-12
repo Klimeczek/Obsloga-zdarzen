@@ -1,4 +1,7 @@
 <resources>
-    <string name="app_name">Calculator</string>
-    <string name="tvResult">Wynik</string>
+    <string name="app_name">Zgadnij Liczbe</string>
+    <string name="btnGuess">Zgadnij</string>
+    <string name="tvGuess">Wybrałeś liczbe:</string>
+    <string name="btnClear">Resetuj</string>
+    <string name="btnNewNumber">Nowa Liczba</string>
 </resources>
